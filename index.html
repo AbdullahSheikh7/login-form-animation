@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login - Made by Abdullah Sheikh</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/utility.css">
+    </head>
+    <body>
+        <div class="container signin">
+            <div class="form">
+                <div class="col-left">
+                    <form action="signin.php" method="post" class="signin">
+                        <h1>Sign in</h1>
+                        <div class="oauth">
+                            <span>
+                                <img src="img/facebook.png" alt="facebook icon">
+                            </span>
+                            <span>
+                                <img src="img/google-plus.png" alt="google-plus icon">
+                            </span>
+                            <span>
+                                <img src="img/linkedin.png" alt="linkedin icon">
+                            </span>
+                        </div>
+                        <p>or use your account</p>
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <input type="password" name="password" id="email" placeholder="Password">
+                        <p><a href="#">Forgot your password?</a></p>
+                        <button class="btn btn-filled" onclick="action()" type="submit">SIGN IN</button>
+                    </form>
+                </div>
+                <div class="col-right">
+                    <form action="signup.php" method="post" class="signup">
+                        <h1>Create Account</h1>
+                        <div class="oauth">
+                            <span>
+                                <img src="img/facebook.png" alt="facebook icon">
+                            </span>
+                            <span>
+                                <img src="img/google-plus.png" alt="google-plus icon">
+                            </span>
+                            <span>
+                                <img src="img/linkedin.png" alt="linkedin icon">
+                            </span>
+                        </div>
+                        <p>or use your email for registration</p>
+                        <input type="text" name="name" id="name" placeholder="Name">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <input type="password" name="password" id="email" placeholder="Password">
+                        <button class="btn btn-filled" onclick="action()" type="submit">SIGN UP</button>
+                    </form>
+                </div>
+            </div>
+            <div class="content">
+                <div class="col-left">
+                    <div class="inner-container">
+                        <h1>Welcome Back!</h1>
+                        <p>To keep connected with us please login with your personal info</p>
+                        <button class="btn btn-outline" onclick="action()">SIGN IN</button>
+                    </div>
+                </div>
+                <div class="col-right">
+                    <div class="inner-container">
+                        <h1>Hello, Friend!</h1>
+                        <p>Enter your personal details and start journey with us</p>
+                        <button class="btn btn-outline" onclick="action()">SIGN UP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="script.js" text="text/javascript"></script>
+</html>
