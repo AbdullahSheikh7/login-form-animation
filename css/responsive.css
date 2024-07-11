@@ -1,0 +1,37 @@
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container > .form {
+        width: 100%;
+        height: 70vh;
+    }
+
+    .container > .content {
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        width: 100%;
+        height: 30vh;
+    }
+
+    .container .form > div > form {
+        gap: 20px;
+    }
+
+    .container .content div .inner-container p {
+        display: none;
+    }
+
+    .container .form > div {
+        transition: translate 1s ease-in-out;
+    }
+
+    .container.signup .form {
+        translate: 0 0;
+    }
+
+    .container.signup .content {
+        translate: 0 0;
+    }
+}

@@ -14,13 +14,15 @@
 .container {
     display: flex;
     text-align: center;
+    width: 100%;    
+    height: 100vh;
 }
 
 .container > div {
     position: relative;
-    height: 100vh;
+    height: 100%;
     width: 50%;
-    transition: left 1s ease-in-out;
+    transition: translate 1s ease-in-out;
 }
 
 .container .form {
@@ -32,46 +34,41 @@
 .container .form > div {
     position: relative;
     min-width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: left 0 ease-in-out;
-    transition-delay: 500ms;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    transition: translate 0s ease-in-out 500ms;
     padding: 25px;
     box-sizing: border-box;
     left: 0;
 }
 
 .container.signup .form .col-left {
-    left: -100%;
+    translate: -100% 0;
 }
 
 .container.signup .form .col-right {
-    left: -100%;
+    translate: -100% 0;
 }
 
-.container .form > div form {
+.container .form > div > form {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 25px;
+    display: grid;
+    place-items: center;
+    gap: 25px 0;
 }
 
 .container .form .oauth {
     display: flex;
-    gap: 15px;
+    gap: 0 15px;
 }
 
 .container .form .oauth span {
     cursor: pointer;
     background-color: rgb(var(--foreground));
     border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
     height: 40px;
     width: 60px;
 }
@@ -85,10 +82,9 @@
 .container .content > div {
     position: relative;
     min-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: left 1s ease-in-out;
+    display: grid;
+    place-items: center;
+    transition: translate 1s ease-in-out;
     padding: 25px;
     box-sizing: border-box;
 }
@@ -102,9 +98,8 @@
     width: fit-content;
     height: min-content;
     color: white;
-    transition: all 1s ease-in-out;
+    transition: translate 1s ease-in-out;
 }
-
 .container .content .col-left .inner-container {
     translate: -100px 0;
 }
@@ -121,19 +116,19 @@
 }
 
 .container.signin .content > div {
-    left: -100%;
+    translate: -100% 0;
 }
 .container.signup .content > div {
-    left: 0;
+    translate: 0 0;
 }
 
 .container.signin > div {
-    left: 0;
+    translate: 0 0;
 }
 
 .container.signup .form {
-    left: 50%;
+    translate: 100% 0;
 }
 .container.signup .content {
-    left: -50%;
+    translate: -100% 0;
 }
